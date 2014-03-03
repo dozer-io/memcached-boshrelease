@@ -1,0 +1,5 @@
+check process memcached
+  with pidfile /var/vcap/sys/run/memcached/memcached.pid
+  start program "/var/vcap/jobs/memcached/bin/monit_debugger memcached_ctl '/var/vcap/jobs/memcached/bin/memcached_ctl start'"
+  stop program "/var/vcap/jobs/memcached/bin/monit_debugger memcached_ctl '/var/vcap/jobs/memcached/bin/memcached_ctl stop'"
+  group vcap
