@@ -1,0 +1,5 @@
+---
+name: memcached
+files:
+- memcached/libevent-2.0.21-stable.tar.gz
+- memcached/memcached-1.4.17.tar.gz
